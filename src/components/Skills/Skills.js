@@ -1,7 +1,10 @@
 import { Container, Row, Col } from "react-bootstrap"
 import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css"
-
+import typeScriptLogo from "../../assets/img/typescriptLogo.png"
+import uiux from "../../assets/img/uiux2.svg"
+import reactLogo from "../../assets/img/reactLogo.webp"
+import htmllogo from "../../assets/img/htmlLogo.png"
 export const Skills = () => {
     const responsive = {
         superLargeDesktop: {
@@ -35,19 +38,19 @@ export const Skills = () => {
                         <p>My Skills</p>
                         <Carousel responsive={responsive} infinite={true} className="skill-slider">
                             <div className="item">
-                                <img src={'image skill'} alt="Image" />
+                                <img src={reactLogo} alt="Image" />
                                 <h5>React</h5>
                             </div>
                             <div className="item">
-                                <img src={'image skill'} alt="Image" />
+                                <img src={typeScriptLogo} alt="Image" />
                                 <h5>TypeScript</h5>
                             </div>
                             <div className="item">
-                                <img src={'image skill'} alt="Image" />
+                                <img src={uiux} alt="Image" />
                                 <h5>UI/UX Design</h5>
                             </div>
                             <div className="item">
-                                <img src={'image skill'} alt="Image" />
+                                <img src={htmllogo} alt="Image" />
                                 <h5>Web Development</h5>
                             </div>
                         </Carousel>

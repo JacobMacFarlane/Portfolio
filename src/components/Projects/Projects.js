@@ -11,16 +11,16 @@ export const Projects = () => {
       description: "Fun Learning TypeScript",
       imgUrl: projectImg1,
     },
-    {
-      title: "Travel Tracker",
-      description: "Air BnB Clone",
-      imgUrl: projectImg1,
-    },
-    {
-      title: "AI Project",
-      description: "Fun Learning Ai",
-      imgUrl: projectImg1,
-    },
+    // {
+    //   title: "Travel Tracker",
+    //   description: "Air BnB Clone",
+    //   imgUrl: projectImg1,
+    // },
+    // {
+    //   title: "AI Project",
+    //   description: "Fun Learning Ai",
+    //   imgUrl: projectImg1,
+    // },
   ];
 
   return (
@@ -59,14 +59,8 @@ export const Projects = () => {
                         isVisible ? "animate__animated animate__slideInUp" : ""
                       }
                     >
-                      <Tab.Pane eventKey="first">
-                        <Row>
-                          {projects.map((project, index) => {
-                            return <ProjectCards key={index} {...project} />;
-                          })}
-                        </Row>
-                      </Tab.Pane>
-                      <Tab.Pane eventKey="second">Place Hold 2</Tab.Pane>
+                      <Tab.Pane eventKey="first">No projects yet, Check back in a bit!</Tab.Pane>
+                      <Tab.Pane eventKey="second">No projects yet, Check back in a bit!</Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <Row>
                           {projects.map((project, index) => {
