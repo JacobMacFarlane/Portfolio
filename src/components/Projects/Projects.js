@@ -3,13 +3,15 @@ import { Col, Container, Tab, Nav, Row } from "react-bootstrap";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 import projectImg1 from "../../assets/img/Screenshot 2023-06-19 at 4.03.38 PM.png"
+import streeteatz from "../../assets/img/streeteatz.png"
 export const Projects = () => {
 
-  const projects = [
+  const projects3 = [
     {
       title: "Song Verusz",
       description: "Fun Learning TypeScript",
       imgUrl: projectImg1,
+      link: 'https://song-showcase-l0v955wgo-jacobmacfarlane.vercel.app/'
     },
     // {
     //   title: "Travel Tracker",
@@ -22,6 +24,14 @@ export const Projects = () => {
     //   imgUrl: projectImg1,
     // },
   ];
+  const projects1 = [
+    {
+      title: "Street Eatz",
+      description: "Making Food Truck Vendors job easy so we can enjoy yummy food!",
+      imgUrl: streeteatz,
+      link: 'https://streateatz-fe.vercel.app/'
+    }
+  ]
 
   return (
     <section className="project" id="projects">
@@ -59,11 +69,17 @@ export const Projects = () => {
                         isVisible ? "animate__animated animate__slideInUp" : ""
                       }
                     >
-                      <Tab.Pane eventKey="first">No projects yet, Check back in a bit!</Tab.Pane>
+                      <Tab.Pane eventKey="first">
+                        <Row>
+                          {projects1.map((project, index) => {
+                            return <ProjectCards key={index} {...project} />;
+                          })}
+                        </Row>
+                        </Tab.Pane>
                       <Tab.Pane eventKey="second">No projects yet, Check back in a bit!</Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <Row>
-                          {projects.map((project, index) => {
+                          {projects3.map((project, index) => {
                             return <ProjectCards key={index} {...project} />;
                           })}
                         </Row>

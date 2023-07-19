@@ -1,6 +1,6 @@
 import { Col } from'react-bootstrap';
 
-export const ProjectCards = ({ title, description, imgUrl }) => {
+export const ProjectCards = ({ title, description, imgUrl, link }) => {
     console.log(title, 'title');
     console.log(description, 'description');
     console.log(imgUrl, 'imgUrl');
@@ -11,6 +11,7 @@ export const ProjectCards = ({ title, description, imgUrl }) => {
           <div className="proj-txtx">
             <h4>{title}</h4>
             <span>{description}</span>
+            <a href={link}>Link</a>
           </div>
         </div>
       </Col>
