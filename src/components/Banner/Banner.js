@@ -43,7 +43,7 @@ const tick = () => {
 }
 
 const goToLinkedIn = () => {
-    window.location.href = "https://www.linkedin.com/in/jacob-macfarlane-052593261/"
+    window.location.href = "https://www.linkedin.com/in/jacob-macfarlane"
 }
     return (
         <section className="banner" id="home">
