@@ -4,6 +4,7 @@ import "animate.css";
 import TrackVisibility from "react-on-screen";
 import projectImg1 from "../../assets/img/Screenshot 2023-06-19 at 4.03.38 PM.png"
 import streeteatz from "../../assets/img/streeteatz.png"
+import Moopsify from "../../assets/img/Screenshot 2023-08-04 at 4.53.33 PM.png"
 export const Projects = () => {
 
   const projects3 = [
@@ -30,6 +31,12 @@ export const Projects = () => {
       description: "Making Food Truck Vendors job easy so we can enjoy yummy food!",
       imgUrl: streeteatz,
       link: 'https://streateatz-fe.vercel.app/'
+    },
+    {
+      title: "Moopsify",
+      description: "Spotify Clone",
+      imgUrl: Moopsify,
+      link: 'https://moopsify.netlify.app/'
     }
   ]
 
